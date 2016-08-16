@@ -52,6 +52,25 @@ var species = "Grevy's Zebra";
 var foo = "bar";
 ```
 
+### Always use braces for control structures even if they contain only one line
+
+Braces should be used around all statements, even single statements, when they are part of a control structure, such as an `if` or `for` statement. This makes it easier to add statements without accidentally introducing bugs.
+
+*Right:*
+
+```js
+if (true) {
+  console.log('winning');
+}
+```
+
+*Wrong:*
+
+```js
+if (true)
+  console.log('losing');
+```
+
 ### Opening braces go on the same line
 
 Your opening braces go on the same line as the statement.
@@ -74,6 +93,7 @@ if (true)
 ```
 
 Also, notice the use of whitespace before and after the condition statement.
+
 
 ### Declare one variable per var statement
 
