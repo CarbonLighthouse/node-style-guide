@@ -98,7 +98,9 @@ Also, notice the use of whitespace before and after the condition statement.
 ### Declare one variable per var statement
 
 Declare one variable per var statement, it makes it easier to re-order the
-lines.
+lines. However, ignore [Crockford][crockfordconvention] when it comes to
+declaring variables deeper inside a function, just put the declarations wherever
+they make sense.
 
 *Right:*
 
@@ -126,6 +128,9 @@ while (keys.length) {
   object[key] = values.pop();
 }
 ```
+
+[crockfordconvention]: http://javascript.crockford.com/code.html
+
 
 ## Naming Conventions
 
